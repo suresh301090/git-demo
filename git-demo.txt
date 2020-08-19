@@ -1,0 +1,9 @@
+#Header
+Hello Git
+
+#Body
+This is a Git-Demo - Sample file.
+Second line is added.
+thrired line is added.
+#Footer
+Git-Demo - Sample file ~~ Ends

@@ -1,0 +1,229 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+{
+	//"$schema" : "https://aka.ms/terminal-profiles-schema",
+	"$schema" : "https://raw.githubusercontent.com/microsoft/terminal/release-1.0/doc/cascadia/profiles.schema.json",
+	"defaultProfile" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+	// Add any keybinding overrides to this array.
+	// To unbind a default keybinding, set the command to "unbound"
+	"keybindings" : [],
+	"profiles" : 
+	{
+		"defaults" : {},
+		// Put settings here that you want to apply to all profiles
+		"list" : 
+		[
+			{
+				// Make changes here to the cmd.exe profile
+				"guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"name" : "cmd",
+				"commandline" : "cmd.exe",
+				"hidden" : false,
+				"acrylicOpacity" : 0.8,
+				"background" : "#000000",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"name" : "Windows PowerShell",
+				"commandline" : "powershell.exe",
+				"hidden" : false,
+				"fontFace" : "CaskaydiaCove Nerd Font",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.7,
+				"background" : "#012355",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/powershell-96.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+				"name" : "PowerShell",
+				"source": "Windows.Terminal.PowershellCore",
+				"hidden" : false,
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.8,
+				"background" : "#191723",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+				"hidden" : false,
+				"name" : "Azure Cloud Shell",
+				"source" : "Windows.Terminal.Azure"
+			},
+			{	// Learn NodeJS
+				"guid" : "{9acb9455-ca41-5af7-950f-6bca1bc97ddd}",
+				"name" : "Learn-NodeJS",
+				"commandline" : "pwsh.exe",
+				"startingDirectory" : "D:\/Project-Node",
+				"hidden" : false,
+				"cursorShape" : "vintage",
+				"icon": "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/Node-32.ico",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.65,
+				"background" : "#004221",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/Node-96.png",
+				"backgroundImageAlignment" : "topRight",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{	// WSL - Windows Subsystem for linux
+				"guid" : "{9acb9455-ca41-5af7-950f-6bca1bc9722f}",
+				"name" : "Ubuntu-18.04 WSL",
+				"commandline" : "cmd.exe",
+				"hidden" : false,
+				"cursorShape" : "vintage",
+				"icon": "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.scale-200.png",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.75,
+				"background" : "#350425",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ubuntu-linux-128.png",
+				"backgroundImageAlignment" : "topRight",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			// Ubuntu VBox
+			{
+				"guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6103}",
+				"name" : "OpenSSH Ubuntun-vbox",
+				"commandline" : "powershell.exe ssh ubuntu-vbox@192.168.43.70",
+				"hidden": false,
+				"cursorShape" : "vintage",
+				"icon" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/ubuntu-32.png",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.75,
+				"background" : "#7a4633",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ubuntu-128.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6102}",
+				"name" : "OpenSSH Debian-vbox",
+				"commandline" : "powershell.exe ssh debian-vbox@192.168.43.60",
+				"hidden": false,
+				"cursorShape" : "vintage",
+				"icon" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/debian-32.png",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.75,
+				"background" : "#632b3b",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/debian-128.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{aaaa9e6d-1e09-4be6-b76c-82b4ba1885fb}",
+				"name" : "Multipass Shell",
+				"commandline" : "multipasss shell",
+				"hidden": false,
+				"fontFace" : "Ubuntu Mono",
+				"cursorShape" : "filledBox",
+				"icon" : "C:/Program Files/Multipass/bin/multipass_wt.ico",
+				"background" : "#350425",
+				"historySize" : 50000
+			},
+			{
+				"guid" : "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e50}",
+				"name" : "Multipass wsl",
+				"commandline" : "multipass shell wsl",
+				"hidden" : false,
+				"cursorShape" : "vintage",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.75,
+				"icon" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/multipass-32.png",
+				"background" : "#7a4633",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/multipass-128.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+				"guid" : "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e51}",
+				"name" : "Multipass ubuntu-hv",
+				"commandline" : "multipass shell ubuntu-hv",
+				"hidden" : false,
+				"cursorShape" : "vintage",
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.75,
+				"icon" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ProfileIcons/multipass-32.png",
+				"background" : "#7a4633",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/multipass-128.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			},
+			{
+			    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+			    "name": "Ubuntu-18.04",
+				"source": "Windows.Terminal.Wsl",
+			    "hidden": false,
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.8,
+				"background" : "#350425",
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/ubuntu-linux-128.png",
+				"backgroundImageAlignment" : "topRight",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "170, 2, 2, 2"
+			},
+			{
+			    "guid": "{914a0d3c-9db4-56f8-a8ac-65f4b7ea8b09}",
+			    "name": "openSUSE-Leap-15.2",
+			    "source": "Windows.Terminal.Wsl", 
+			    "hidden": false
+			},
+			{
+			    "guid": "{92478cef-47f7-5745-8463-44a1ea1d2585}",
+			    "name": "Ubuntu-2",
+			    "source": "Windows.Terminal.Wsl",
+			    "hidden": false
+			},
+			{
+			    "guid": "{92478cef-47f7-5745-8463-44a1ea1d2581}",
+			    "name": "Git-Bash",
+				"commandline": "\"%PROGRAMFILES%\\Git\\usr\\bin\\bash.exe\" -i -l",
+				"startingDirectory": "%USERPROFILE%\\Desktop\\git-demo",
+			    "hidden": false,
+				"useAcrylic" : true,
+				"acrylicOpacity" : 0.9,
+				"icon" : "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+				"backgroundImage": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+				"backgroundImageAlignment": "topRight",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode": "none",
+				"padding" : "170, 2, 2, 2"
+			},
+			{
+				"guid" : "{00000000-c2c6-5271-96e7-009a87ff44bf}",
+				"name" : "Terminal git-demo",
+				"commandline" : "powershell.exe",
+				"startingDirectory": "C:\/Users\\Me\\Desktop\\git-demo",
+				"hidden" : false,
+				"fontFace" : "CaskaydiaCove Nerd Font",
+				"acrylicOpacity" : 0.75,
+				"useAcrylic" : true,
+				"backgroundImage" : "%LOCALAPPDATA%/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/powershell-96.png",
+				"backgroundImageAlignment" : "topLeft",
+				"backgroundImageOpacity" : 0.8,
+				"backgroundImageStretchMode" : "none",
+				"padding" : "112, 2, 1, 8"
+			}
+		]
+	},
+	// Add custom color schemes to this array
+	"schemes" : 
+	[]
+}
